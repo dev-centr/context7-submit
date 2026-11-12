@@ -1,0 +1,20 @@
+name "context7-submit"
+description "Submit a documentation source to the Context7 index."
+authors "Ryan Johnson"
+copyright "Copyright (c) 2026 Dev-Centr"
+license "MIT"
+homepage "https://github.com/dev-centr/context7-submit"
+targetPath "bin"
+version "0.1.0"
+
+configuration "application" {
+	targetType "executable"
+	targetName "ctx7-submit"
+	mainSourceFile "source/app.d"
+}
+
+configuration "library" {
+	targetType "library"
+	targetName "context7-submit"
+	excludedSourceFiles "source/app.d"
+}

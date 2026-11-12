@@ -1,0 +1,11 @@
+= Changelog
+:toc:
+:toclevels: 3
+
+== 2026-11-12
+
+=== First release
+
+* `ctx7-submit` sends a Git repository, documentation site, OpenAPI spec, or `llms.txt` file to the Context7 index.
+* The `library` configuration exposes `submitSource` for other D programs, including DevCentr.
+* Details: link:changelog-details/2026-11-12%20-%20first-release.adoc[2026-11-12 - First release]

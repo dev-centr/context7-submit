@@ -1,0 +1,7 @@
+= 2026-11-12
+
+== First release
+
+`ctx7-submit` is the program. `context7.submit` is the library. Both post to Context7's Add Library API with `CONTEXT7_API_KEY`. A website crawl can be limited with `--website-base-url`. The command is not named `add`, so it is not mistaken for installing a package or a skill on the machine.
+
+DevCentr calls `submitSource` from the repository overview. The package is prepared for the DUB registry and is not registered there yet.

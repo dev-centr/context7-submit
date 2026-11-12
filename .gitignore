@@ -1,0 +1,17 @@
+# allow-list
+*
+!*/
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.env.example
+!AGENTS.md
+!README.md
+!LICENSE
+!CHANGELOG.adoc
+!dub.sdl
+!source/**/*.d
+!tests/*.sh
+!changelog-details/**/*.adoc
+!.github/**/*.yml
+!docs/**/*.adoc

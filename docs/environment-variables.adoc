@@ -1,0 +1,36 @@
+= Environment variables
+:page-audience: developers
+:page-usage-context: reference
+:page-orig-author: Cursor Grok 4.7 on behalf of Ryan Johnson
+:page-last-author: Cursor Grok 4.7 on behalf of Ryan Johnson
+
+Names only. Do not put secret values in this file or in `.env.example`.
+
+[cols="2,3,1,2,3",options="header"]
+|===
+| Variable | Purpose | Required | If unset | Source
+
+| `CONTEXT7_API_KEY`
+| Authenticates a submission to the Context7 index.
+| Yes
+| `ctx7-submit` exits 3 and does not send the request.
+| https://context7.com/dashboard[Context7 dashboard], API keys. Set it in the environment for the process. Do not pass it as an argument.
+
+| `CONTEXT7_GIT_TOKEN`
+| Git token sent with a private repository submission.
+| Optional
+| Public submissions proceed without it. A private repository is submitted without a token.
+| The Git host's access-token page. Set it in the environment. Do not pass it as an argument.
+
+| `CTX7_SUBMIT_VERBOSE`
+| Prints the run log on the terminal.
+| No
+| The terminal shows the outcome only, unless `CI=true`.
+| Set to `1` in the environment. `--verbose` overrides it. `--quiet` turns the extra terminal output off.
+
+| `CI`
+| When `true`, the program prints the run log unless `--quiet` is set.
+| No
+| Verbose output stays off unless requested.
+| Set by most continuous-integration systems.
+|===
